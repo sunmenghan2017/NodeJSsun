@@ -1,3 +1,4 @@
+//程序①
 var username=process.argv[2];
 var passsword=process.argv[3];
 console.log(username,password);
