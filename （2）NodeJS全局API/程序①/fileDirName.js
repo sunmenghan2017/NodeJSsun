@@ -34,3 +34,26 @@ var server = http.createServer(function(req,res){
 //3.服务监听一个端口
 server.listen(8080);
 console.log("server is listening 8080");
+
+
+
+
+
+
+
+//以下为修正版
+/**  2019-9-9//
+ * const http = require("http");
+ * const fs = require("fs");
+    const path=require("path");
+ * http.createServer(function(req,res){
+     var filePath=path.join(__dirname,"/views/view.html");
+     console.log(filePath);
+     var fileContent = fs.readFileSync(filePath);
+        fileContent = fileContent.toString("utf8");
+        res.writeHead(200,{"Content-Type":"text/html"});
+        res.write(fileContent);
+        res.end();
+ }).listen(8080);
+ * console.log("server is listening 8080");
+ */
