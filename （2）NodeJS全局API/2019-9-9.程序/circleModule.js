@@ -19,7 +19,7 @@ circleFun.prototype.area= function(){
 module.exports = circleFun;
 */
 
-//*修正
+/*修正
 ⑤
 function circleFun(r){
     function circumference(){
