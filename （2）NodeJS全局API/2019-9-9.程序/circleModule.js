@@ -19,6 +19,23 @@ circleFun.prototype.area= function(){
 module.exports = circleFun;
 */
 
+/*修正
+⑤
+function circleFun(r){
+    function circumference(){
+        var circumference=2*Math.PI*r;
+        return circumference;
+    }
+    function area(){
+        var area=Math.PI*r*r;
+        return area;
+    }
+    return {circumference:circumference,area:area};
+}
+module.exports = {
+     circleFun:circleFun
+};
+*/
 
 //程序⑥
 function circumference(r){
