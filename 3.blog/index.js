@@ -74,6 +74,9 @@ http.createServer(function(req,res){
     else if(pathName=='/listget'){
         showList(res);
     }
+    else if(pathName=='/chapter'){
+        showList(res); 
+    }
     else if(pathName=='/listmanagerget'){
         showList(res); 
     }

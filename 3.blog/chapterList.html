@@ -104,7 +104,7 @@
                                 "<h2><a href='###'>" + dataList[i].chapterName + "</a></h2>" +
                                 "<figure><img src='"+dataList[i].imgPath+"' border='0' width='120' height='120'></figure>" +
                                 "<ul class='nlist'><p>" + dataList[i].chapterDes + "</p>" +
-                                "<a href='##' class='readmore'>阅读全文" + "</a></ul>" + 
+                                "<a href='/detail?chapterId="+ (i+1) +"' target='_blank' class='readmore'>阅读全文" + "</a></ul>" + 
                                 "<p class='dateview'><span>" + dataList[i].publishTimer + "</span>" + 
                                 "<span>" + dataList[i].author + "</span>" +
                                 "<span>"+"分类：["+"悠客"+"]"+"</span>" +
@@ -117,10 +117,10 @@
             //console.log(data);
         })
     })
-    $("#result").on("click",".readmore",function(e,chapterId){
-            e.preventDefault();
-            window.location = "http://localhost:8083/detail?chapterId=" + chapterId;   
-    })
+    // $("#result").on("click",".readmore",function(e,chapterId){
+    //         e.preventDefault();
+    //         window.location = "http://localhost:8083/detail?chapterId=" + chapterId;   
+    // })
    
        
 </script>
