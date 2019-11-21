@@ -8,7 +8,7 @@ function Radio(station) {
 
   setTimeout(() => {
     self.emit('open', station);
-  }, 0);
+  }, 2000);
 
   setTimeout(() => {
     self.emit('stop', station);
